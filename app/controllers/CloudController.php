@@ -67,7 +67,7 @@ class CloudController extends \lithium\action\Controller
 
                 // Return id
                 return $cloud->id;
-            }
+            //}
 
         }
 
