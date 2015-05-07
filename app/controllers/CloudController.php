@@ -52,15 +52,15 @@ class CloudController extends \lithium\action\Controller
             $data = $this->request->data[0];
 
             // Parse string and ensure we have the correct key
-            $key = "4r3hjiohs3jfiuh3";
-            $offset = 2;
-            $value = substr($data, $offset, strlen($key));
+            //$key = "4r3hjiohs3jfiuh3";
+            //$offset = 2;
+            //$value = substr($data, $offset, strlen($key));
 
             // Check to make sure we have the correct key
-            if ($value == $key) {
+            //if ($value == $key) {
 
                 // Truncate HTTP data from JSON string
-                $data = substr($data, 7 + strlen($key), -3);
+                //$data = substr($data, 7 + strlen($key), -3);
                 $data = stripslashes($data);
                 $json = json_decode($data);
                 $cloud = Cloud::createCloud($json);
