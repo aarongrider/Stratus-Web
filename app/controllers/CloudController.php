@@ -61,12 +61,12 @@ class CloudController extends \lithium\action\Controller
 
                 // Truncate HTTP data from JSON string
                 //$data = substr($data, 7 + strlen($key), -3);
-                $data = stripslashes($data);
+                //$data = stripslashes($data);
                 $json = json_decode($data);
-                $cloud = Cloud::createCloud($json);
+                //$cloud = Cloud::createCloud($json);
 
                 // Return id
-                return $cloud->id;
+                return $data;
             //}
 
         }
