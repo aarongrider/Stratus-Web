@@ -64,7 +64,7 @@ use lithium\data\Connections;
  	'adapter' => 'MySql',
  	'host' => 'localhost',
  	'login' => 'root',
- 	'password' => '',
+ 	'password' => 'goog32',
  	'database' => 'VoiceCloudWeb',
  	'encoding' => 'UTF-8'
  ));
