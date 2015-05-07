@@ -10,6 +10,7 @@ class Cloud extends \lithium\data\Model {
         $cloud = Cloud::create();
         $cloud->width = $json["layout"]["width"];
         $cloud->height = $json["layout"]["height"];
+        $cloud->timestamp = $json["layout"]["timestamp"];
         $cloud->created = date('Y-m-d H:i:s');
         $cloud->save();
 
@@ -20,6 +21,7 @@ class Cloud extends \lithium\data\Model {
             $word->cloudid = $cloud->id;
             $word->name = $word_data["name"];
             $word->count = $word_data["count"];
+            $word->timestamp = $word_data["timestamp"];
 
             // Bounds
             $word->bottom = $word_data["bounds"]["bottom"];
