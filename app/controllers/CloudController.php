@@ -49,7 +49,7 @@ class CloudController extends \lithium\action\Controller
         // Take in JSON post
         if ($this->request->data) // If we have submitted the form
         {
-            $data = $this->request->data;
+            $json = $this->request->data;
 
             // Parse string and ensure we have the correct key
             //$key = "4r3hjiohs3jfiuh3";
@@ -62,11 +62,11 @@ class CloudController extends \lithium\action\Controller
                 // Truncate HTTP data from JSON string
                 //$data = substr($data, 7 + strlen($key), -3);
                 //$data = stripslashes($data);
-                $json = json_decode($data);
-                //$cloud = Cloud::createCloud($json);
+                //$json = json_decode($data);
+                $cloud = Cloud::createCloud($json);
 
                 // Return id
-                return $data;
+                return $cloud->id;
             //}
 
         }
