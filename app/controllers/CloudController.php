@@ -49,7 +49,7 @@ class CloudController extends \lithium\action\Controller
         // Take in JSON post
         if ($this->request->data) // If we have submitted the form
         {
-            $data = $this->request->data[0];
+            $data = $this->request->data;
 
             // Parse string and ensure we have the correct key
             //$key = "4r3hjiohs3jfiuh3";
