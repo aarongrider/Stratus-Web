@@ -1,4 +1,4 @@
-<div style="width: <?=$cloud->width;?>; height: <?=$cloud->height; ?> overflow: scroll">
+<div style="position: absolute; width: <?=$cloud->width;?>; height: <?=$cloud->height; ?> overflow: scroll">
 
     <?php foreach($words as $word) {
 
