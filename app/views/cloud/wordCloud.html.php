@@ -1,27 +1,18 @@
-<h1><?=$cloud->name;?></h1>
-<h5>Word Cloud Number: <b><?=$cloud->id;?></b></h5>
+<div style="width: <?=$cloud->width;?>; height: <?=$cloud->height;?>">
 
-<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-condensed">
-    <thead>
-    <tr>
-        <th class="column-sm">Name</th>
-        <th class="column-sm">Count</th>
-        <th class="column-sm">Position</th>
-    </tr>
-    </thead>
-    <tbody>
-    <?php foreach($words as $word) { ?>
+    <?php foreach($words as $word) {
 
-        <tr>
-            <td> <button class="btn waves-effect waves-light blue" type="" name="action"><?=$word->name;?></button></td>
-            <td> <?=$word->count;?> </td>
-            <td> Top: <b><?=$word->top;?></b>, Left: <b><?=$word->left;?></b></td>
-        </tr>
+        $width = $word->right - $word->left;
+        $height = $word->bottom - $word->top;
+
+    ?>
+
+            <div style="position: absolute; width: <?=$width;?>; height: <?=$height;?>; top: <?=$word->top;?>; left: <?=$word->left;?>;">
+                <button class="word btn waves-effect waves-light blue" type="" name="action"><?=$word->name;?></button>
+            </div>
 
     <?php } ?>
-    </tbody>
-</table>
 
-<hr>
+</div>
 
-<div align="center"><a href="/cloud/" class="waves-effect waves-light btn orange">Start Over</a></div>
+<a href="/cloud/" class="waves-effect waves-light btn orange">Start Over</a></div>

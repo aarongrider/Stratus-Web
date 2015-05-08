@@ -11,7 +11,7 @@
 <head>
 	<?php echo $this->html->charset();?>
 	<title>Voice Cloud &gt; <?php echo $this->title(); ?></title>
-	<?php echo $this->html->style(array('materialize.css')); ?>
+	<?php echo $this->html->style(array('materialize.css', 'style.css')); ?>
 	<?php echo $this->html->script(array('jquery-2.1.4.min.js', 'materialize.js')); ?>
 	<?php echo $this->styles(); ?>
 	<?php echo $this->html->link('Icon', null, array('type' => 'icon')); ?>

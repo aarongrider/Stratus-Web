@@ -39,6 +39,19 @@ class CloudController extends \lithium\action\Controller
         }
     }
 
+    public function wordList($cloudid = null)
+    {
+        $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid)));
+
+        if ($cloud != null) {
+            $words = Word::find('all', array('conditions' => array('cloudid' => $cloudid)));
+            return compact('cloud', 'words');
+        }
+        else {
+            return $this->redirect('./notFound/');
+        }
+    }
+
     public function notFound()
     {
         // Word Clould not found
