@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\Cloud;
 use app\models\Word;
+use lithium\core\Environment;
 
 class CloudController extends \lithium\action\Controller
 {
@@ -24,6 +25,7 @@ class CloudController extends \lithium\action\Controller
             //$this->wordCloud($request['id']);
             return $this->redirect('./wordCloud/' . $request['id']);
         }
+        
     }
 
     public function wordCloud($cloudid = null)

@@ -60,6 +60,7 @@ use lithium\data\Connections;
  * Uncomment this configuration to use MySQL as your default database.
  */
 
+
 $internal_mysql = "localhost";
 $external_mysql = "localhost";
 
@@ -69,7 +70,7 @@ Connections::add('default', array(
 		'adapter' => 'MySql',
 		'host' => $external_mysql,
 		'login' => 'root',
-		'password' => '',
+		'password' => 'goog32',
 		'database' => 'VoiceCloudWeb',
 		'encoding' => 'UTF-8' //,
 	),
