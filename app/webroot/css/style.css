@@ -1,0 +1,19 @@
+.word{
+    width: 100%;
+    height: 100%;
+    font-size: 70%;
+    padding: 0;
+    line-height: 0;
+    z-index: 1;
+}
+
+.smallLink{
+    font-size: small;
+}
+
+#topBar{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 50;
+}
