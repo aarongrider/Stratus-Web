@@ -3,8 +3,7 @@
 namespace app\controllers;
 
 use app\models\Cloud;
-use app\models\Word;
-use lithium\core\Environment;
+use app\models\Words;
 
 class CloudController extends \lithium\action\Controller
 {
@@ -33,7 +32,7 @@ class CloudController extends \lithium\action\Controller
         $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid)));
 
         if ($cloud != null) {
-            $words = Word::find('all', array('conditions' => array('cloudid' => $cloudid)));
+            $words = Words::find('all', array('conditions' => array('cloudid' => $cloudid)));
             return compact('cloud', 'words');
         }
         else {
@@ -46,7 +45,7 @@ class CloudController extends \lithium\action\Controller
         $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid)));
 
         if ($cloud != null) {
-            $words = Word::find('all', array('conditions' => array('cloudid' => $cloudid)));
+            $words = Words::find('all', array('conditions' => array('cloudid' => $cloudid)));
             return compact('cloud', 'words');
         }
         else {
