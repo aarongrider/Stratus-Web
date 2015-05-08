@@ -81,7 +81,8 @@ class CloudController extends \lithium\action\Controller
             // If we could not fine a cloud
             if ($cloud == null) $cloud = "none";
 
-            return $cloud;
+            return $json;
+            //return $cloud;
         }
     }
 
