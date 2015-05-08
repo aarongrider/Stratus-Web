@@ -4,6 +4,11 @@ namespace app\models;
 
 class Cloud extends \lithium\data\Model {
 
+    public $hasMany = array(
+        'Words' => array('key' => array('id' => 'cloudid'))
+    );
+
+
     public static function createCloud($json) {
 
         // Create cloud

@@ -56,7 +56,7 @@ class CloudController extends \lithium\action\Controller
 
     public function notFound()
     {
-        // Word Clould not found
+        // Word Cloud not found
     }
 
     public function save()
@@ -76,7 +76,7 @@ class CloudController extends \lithium\action\Controller
         {
             $json = $this->request->data;
             $cloudid = $json["id"];
-            $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid)));
+            $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid), 'with' => array('Words')));
 
             // If we could not fine a cloud
             if ($cloud == null) $cloud = "none";
