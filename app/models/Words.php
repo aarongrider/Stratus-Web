@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-class Word extends \lithium\data\Model {
+class Words extends \lithium\data\Model {
 
 }
 
