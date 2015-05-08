@@ -78,7 +78,7 @@ Connections::add('default', array(
 		'adapter' => 'MySql',
 		'host' => $internal_mysql,
 		'login' => 'root',
-		'password' => 'goog32',
+		'password' => '',
 		'database' => 'VoiceCloudWeb',
 		'encoding' => 'UTF-8' //,
 	)
