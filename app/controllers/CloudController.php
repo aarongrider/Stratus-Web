@@ -25,7 +25,7 @@ class CloudController extends \lithium\action\Controller
             //$this->wordCloud($request['id']);
             return $this->redirect('./wordCloud/' . $request['id']);
         }
-        
+
     }
 
     public function wordCloud($cloudid = null)
@@ -59,42 +59,14 @@ class CloudController extends \lithium\action\Controller
         // Word Clould not found
     }
 
-    public function submit()
+    public function save()
     {
         // Take in JSON post
         if ($this->request->data) // If we have submitted the form
         {
-            $json = $this->request->data;
-
-            // Parse string and ensure we have the correct key
-            //$key = "4r3hjiohs3jfiuh3";
-            //$offset = 2;
-            //$value = substr($data, $offset, strlen($key));
-
-            // Check to make sure we have the correct key
-            //if ($value == $key) {
-
-                // Truncate HTTP data from JSON string
-                //$data = substr($data, 7 + strlen($key), -3);
-                //$data = stripslashes($data);
-                //$json = json_decode($data);
-                $cloud = Cloud::createCloud($json);
-
-                // Return id
-                return $cloud->id;
-            //}
-
+            $cloud = Cloud::createCloud($this->request->data);
+            return $cloud->id;
         }
-
-        //$keys = array_keys($params['request']->data);
-        //$data = $keys[0];
-        //if(($data = json_decode($data, true)) != null) {
-        //    $params['request']->data = $data;
-        //}
-
-        // Parse JSON & save to DB
-
-        // Return ID to sender
     }
 
 }
