@@ -22,7 +22,7 @@ class Cloud extends \lithium\data\Model {
         // Create words
         foreach($json["words"] as $word_data)
         {
-            $word = Word::create();
+            $word = Words::create();
             $word->cloudid = $cloud->id;
             $word->name = $word_data["name"];
             $word->count = $word_data["count"];
