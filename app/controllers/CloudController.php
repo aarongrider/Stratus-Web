@@ -69,6 +69,16 @@ class CloudController extends \lithium\action\Controller
         }
     }
 
+    public function load()
+    {
+        // Take in JSON post
+        if ($this->request->data) // If we have submitted the form
+        {
+            //$cloud = Cloud::createCloud($this->request->data);
+            return "load";
+        }
+    }
+
 }
 
 ?>
