@@ -77,7 +77,7 @@ class CloudController extends \lithium\action\Controller
             $json = $this->request->data;
             $cloudid = $json["id"];
             $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid)));
-            return $cloudid;
+            return $cloud;
         }
     }
 

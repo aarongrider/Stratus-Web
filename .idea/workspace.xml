@@ -28,8 +28,8 @@
       <file leaf-file-name="CloudController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/CloudController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7718631" vertical-offset="283" max-vertical-offset="1365">
-              <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.8574144" vertical-offset="283" max-vertical-offset="1365">
+              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
               <folding>
                 <element signature="e#35#56#0#PHP" expanded="true" />
               </folding>
@@ -842,8 +842,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/CloudController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7718631" vertical-offset="283" max-vertical-offset="1365">
-          <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.8574144" vertical-offset="283" max-vertical-offset="1365">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
           <folding>
             <element signature="e#35#56#0#PHP" expanded="true" />
           </folding>
