@@ -1,4 +1,4 @@
-<div style="width: <?=$cloud->width;?>px; height: <?=$cloud->height;?>px; overflow: scroll;">
+<div id="cloud" style="width: <?=$cloud->width;?>px; height: <?=$cloud->height;?>px; overflow: auto;">
 
     <div id="topBar">
         <a href="/" class="waves-effect waves-light btn orange">Start Over</a> &nbsp
@@ -22,7 +22,7 @@
     ?>
 
             <!-- Word Button -->
-            <div style="position: absolute; width: <?=$width;?>px; height: <?=$height;?>px; top: <?=$word->top;?>px; left: <?=$word->left;?>px;">
+            <div id="1" style="position: absolute; width: <?=$width;?>px; height: <?=$height;?>px; top: <?=$word->top;?>px; left: <?=$word->left;?>px;">
                 <button class="word btn dropdown-button waves-effect waves-light <?=$color;?>" data-activates='dropdown<?=$word->id;?>'><?=$word->name;?></button>
             </div>
 
@@ -40,3 +40,11 @@
     <?php } ?>
 
 </div>
+
+<script>
+    $("#cloud").scrollTop(<?=$cloud->width / 2;?>);
+    $("#cloud").scrollLeft(<?=$cloud->height / 2;?>);
+</script>
+
+<script>
+</script>
