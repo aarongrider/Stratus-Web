@@ -10,7 +10,7 @@
 <html>
 <head>
 	<?php echo $this->html->charset();?>
-	<title>Voice Cloud &gt; <?php echo $this->title(); ?></title>
+	<title>Voice Cloud <?php echo $this->title(); ?></title>
 	<?php echo $this->html->style(array('materialize.css', 'style.css')); ?>
 	<?php echo $this->html->script(array('jquery-2.1.4.min.js', 'materialize.js')); ?>
 	<?php echo $this->styles(); ?>
