@@ -21,7 +21,7 @@ class MainController extends \lithium\action\Controller
 
         if ($success == true)
         {
-            return $this->redirect('/wordcloud/cloudview/' . $request['id']);
+            return $this->redirect('/WordCloud/cloudview/' . $request['id']);
         }
 
     }
