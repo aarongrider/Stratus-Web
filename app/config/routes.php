@@ -62,7 +62,7 @@ Router::connect('/{:controller}/{:action}/{:id:[0-9a-f]{24}}/{:args}');
 Router::connect('/{:controller}/{:action}/{:args}.{:type}');
 Router::connect('/{:controller}/{:action}/{:args}');
 
-Router::connect('/', 'Cloud::index');
+Router::connect('/', 'Main::index');
 //Router::connect('/{:args}', array(), function($request) { header('Location: /login/url/'.str_replace('/','*',$request->url)); exit; });
 
 ?>

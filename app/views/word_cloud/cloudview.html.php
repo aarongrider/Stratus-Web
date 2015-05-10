@@ -1,8 +1,8 @@
 <div style="width: <?=$cloud->width;?>px; height: <?=$cloud->height;?>px; overflow: scroll;">
 
     <div id="topBar">
-        <a href="/cloud/" class="waves-effect waves-light btn orange">Go Back</a> &nbsp
-        <a href="/cloud/wordList/<?=$cloud->id;?>" class="waves-effect waves-light btn green">View Word List</a> <br>
+        <a href="/" class="waves-effect waves-light btn orange">Start Over</a> &nbsp
+        <a href="/wordcloud/listview/<?=$cloud->id;?>" class="waves-effect waves-light btn green">View Word List</a> <br>
         <h3>CloudID: <?=$cloud->id;?></h3>
         <p>Created <?=$cloud->created;?></p>
     </div>

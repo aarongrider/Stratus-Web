@@ -1,6 +1,6 @@
 <div id="topBar">
-    <a href="/cloud/" class="waves-effect waves-light btn orange">Go Back</a> &nbsp
-    <a href="/cloud/wordCloud/<?=$cloud->id;?>" class="waves-effect waves-light btn blue">View Word Cloud</a> <br>
+    <a href="/" class="waves-effect waves-light btn orange">Start Over</a> &nbsp
+    <a href="/wordcloud/cloud/<?=$cloud->id;?>" class="waves-effect waves-light btn blue">View Word Cloud</a> <br>
     <h3>CloudID: <?=$cloud->id;?></h3>
     <p>Created <?=$cloud->created;?></p>
 </div>

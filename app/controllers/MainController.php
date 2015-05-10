@@ -5,7 +5,7 @@ namespace app\controllers;
 use app\models\Cloud;
 use app\models\Words;
 
-class CloudController extends \lithium\action\Controller
+class MainController extends \lithium\action\Controller
 {
 
     public function index()
@@ -21,41 +21,17 @@ class CloudController extends \lithium\action\Controller
 
         if ($success == true)
         {
-            //$this->wordCloud($request['id']);
-            return $this->redirect('./wordCloud/' . $request['id']);
+            return $this->redirect('/wordcloud/cloudview/' . $request['id']);
         }
 
     }
 
-    public function wordCloud($cloudid = null)
-    {
-        $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid)));
-
-        if ($cloud != null) {
-            $words = Words::find('all', array('conditions' => array('cloudid' => $cloudid)));
-            return compact('cloud', 'words');
-        }
-        else {
-            return $this->redirect('./notFound/');
-        }
-    }
-
-    public function wordList($cloudid = null)
-    {
-        $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid)));
-
-        if ($cloud != null) {
-            $words = Words::find('all', array('conditions' => array('cloudid' => $cloudid)));
-            return compact('cloud', 'words');
-        }
-        else {
-            return $this->redirect('./notFound/');
-        }
-    }
-
-    public function notFound()
+    public function notFound($cloudid = null)
     {
         // Word Cloud not found
+        if ($cloudid == null) $cloudid = "";
+
+        return compact('cloudid');
     }
 
     public function save()
