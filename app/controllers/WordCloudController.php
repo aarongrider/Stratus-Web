@@ -37,6 +37,16 @@ class WordCloudController extends \lithium\action\Controller
             return $this->redirect('/notFound/' . $cloudid);
         }
     }
+
+    public function removeWord($wordid)
+    {
+        $word = Words::find('first', array('conditions' => array('id' => $wordid)));
+        Words::remove(array('id' => $wordid));
+
+        // Redirect back to wordcloud
+        $url = '/WordCloud/cloudview/' . $word->cloudid;
+        return $this->redirect($url);
+    }
 }
 
 ?>
