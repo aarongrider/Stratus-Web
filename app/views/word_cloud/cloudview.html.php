@@ -38,11 +38,13 @@
 
             <!-- Word Button -->
             <div id="<?=$word->id;?>" style="position: absolute; width: <?=$width;?>px; height: <?=$height;?>px; top: <?=$word->top;?>px; left: <?=$word->left;?>px;">
-                <button class="word btn dropdown-button waves-effect waves-light <?=$color;?>" style="font-size: 150%;" data-activates='dropdown<?=$word->id;?>'><b><?=$word->name;?></b></button>
+                <button class="word btn dropdown-button waves-effect waves-light <?=$color;?>" data-activates='dropdown<?=$word->id;?>'><b><?=$word->name;?></b></button>
             </div>
 
             <!-- Word Dropdown -->
-            <ul id='dropdown<?=$word->id;?>' class='dropdown-content' style="z-index: <?=$word->id;?>; margin-top: 50px;">
+            <ul id='dropdown<?=$word->id;?>' class='dropdown-content' style="z-index: <?=$word->id;?>; margin-top: 30px; margin-left: 30px">
+                <li><a><b>"<?=$word->name;?>"</b></a></li>
+                <li class="divider"></li>
                 <li><a>Count: <?=$word->count;?></a></li>
                 <li class="divider"></li>
                 <li><a target="_blank" href="https://google.com/#q=<?=$word->name;?>">Google</a></li>
