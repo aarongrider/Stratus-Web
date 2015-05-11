@@ -1,4 +1,4 @@
-<div id="cloud" style="width: <?=$cloud->width;?>px; height: <?=$cloud->height;?>px; overflow: auto;">
+<div id="cloud" style="width: <?=$cloud->width;?>px; height: <?=$cloud->height;?>px; overflow: scroll;">
 
     <div id="topBar">
         <a href="/" class="waves-effect waves-light btn orange">Start Over</a> &nbsp
@@ -27,7 +27,7 @@
             </div>
 
             <!-- Dropdown Structure -->
-            <ul id='dropdown<?=$word->id;?>' class='dropdown-content'">
+            <ul id='dropdown<?=$word->id;?>' class='dropdown-content' style="z-index: <?=$word->id;?>; margin-top: 30px;">
                 <li><a href="#">Count: <?=$word->count;?></a></li>
                 <li class="divider"></li>
                 <li><a href="https://google.com/#q=<?=$word->name;?>">Google</a></li>
@@ -44,6 +44,16 @@
 <script>
     $("#cloud").scrollTop(<?=$cloud->width / 2;?>);
     $("#cloud").scrollLeft(<?=$cloud->height / 2;?>);
+    $(document).ready(function(){
+        $("#cloud").offsetHeight  = 3000;
+        var elem_top = $("#cloud").offset()['top'];
+        console.log(elem_top);
+        var viewport_height = $(window).height();
+
+// Scroll to the middle of the viewport
+        var my_scroll = elem_top - (viewport_height / 2);
+        $(window).scrollTop(my_scroll);
+    });
 </script>
 
 <script>
