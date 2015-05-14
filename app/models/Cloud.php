@@ -27,6 +27,7 @@ class Cloud extends \lithium\data\Model {
             $word->name = $word_data["name"];
             $word->count = $word_data["count"];
             $word->timestamp = $word_data["timestamp"];
+            $word->attached = $word_data["attached"];
 
             // Bounds
             $word->bottom = $word_data["bounds"]["bottom"];
