@@ -5,7 +5,8 @@ namespace app\models;
 class Cloud extends \lithium\data\Model {
 
     public $hasMany = array(
-        'Words' => array('key' => array('id' => 'cloudid'))
+        'Words' => array('key' => array('id' => 'cloudid')),
+        'Groups' => array('key' => array('id' => 'cloudid')),
     );
 
 
