@@ -2,9 +2,6 @@
 
 namespace app\controllers;
 
-use app\models\Cloud;
-use app\models\Words;
-
 class MainController extends \lithium\action\Controller
 {
 
