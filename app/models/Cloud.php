@@ -40,7 +40,7 @@ class Cloud extends \lithium\data\Model {
         }
 
         // Create groups
-        foreach($json["words"] as $group_data)
+        foreach($json["groups"] as $group_data)
         {
             $group = Group::create();
             $group->groupcloudid = $group_data["id"];
