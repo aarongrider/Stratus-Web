@@ -13,6 +13,7 @@ class ApiController extends \lithium\action\Controller
         // Take in JSON post
         if ($this->request->data) // If we have submitted the form
         {
+            echo $this->request->data;
             $cloud = Cloud::createCloud($this->request->data["cloud"]);
             return $cloud->cloudid;
         }
