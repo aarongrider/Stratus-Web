@@ -42,7 +42,7 @@
             </div>
 
             <!-- Word Dropdown -->
-            <ul id='dropdown<?=$word->wordid;?>' class='dropdown-content' style="z-index: <?=$word->id;?>; margin-top: 30px; margin-left: 30px">
+            <ul id='dropdown<?=$word->wordid;?>' class='dropdown-content' style="z-index: <?=$word->wordid;?>; margin-top: 30px; margin-left: 30px">
                 <li><a><b>"<?=$word->name;?>"</b></a></li>
                 <li class="divider"></li>
                 <li><a>Count: <?=$word->count;?></a></li>
