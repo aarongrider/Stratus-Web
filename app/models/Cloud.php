@@ -18,7 +18,7 @@ class Cloud extends \lithium\data\Model {
 
         // Create cloud
         $cloud = Cloud::create();
-        $cloud->width = $json["cloud"]["width"];
+        $cloud->width = $json["width"];
         $cloud->height = $json["height"];
         $cloud->timestamp = $json["timestamp"];
         $cloud->save();
