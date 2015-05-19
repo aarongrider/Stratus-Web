@@ -14,7 +14,7 @@ class ApiController extends \lithium\action\Controller
         if ($this->request->data) // If we have submitted the form
         {
             $cloud = Cloud::createCloud($this->request->data);
-            return $cloud->id;
+            return $cloud->cloudid;
         }
     }
 
@@ -24,7 +24,7 @@ class ApiController extends \lithium\action\Controller
         if ($this->request->data) // If we have submitted the form
         {
             $json = $this->request->data;
-            $cloudid = $json["id"];
+            $cloudid = $json["cloudid"];
             $cloud = Cloud::find('first', array('conditions' => array('cloudid' => $cloudid), 'with' => array('Word', 'Group')));
 
             // If we could not fine a cloud
