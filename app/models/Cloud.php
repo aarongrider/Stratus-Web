@@ -4,6 +4,10 @@ namespace app\models;
 
 class Cloud extends \lithium\data\Model {
 
+    protected $_meta = array(
+        'key' => 'cloudid'
+    );
+
     public $hasMany = array(
         'Word' => array('key' => array('cloudid' => 'cloudid')),
         'Group' => array('key' => array('cloudid' => 'cloudid')),

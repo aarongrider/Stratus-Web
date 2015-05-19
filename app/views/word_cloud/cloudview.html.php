@@ -51,7 +51,7 @@
                 <li><a target="_blank" href="http://wikipedia.org/wiki/<?=$word->name;?>">Wikipedia</a></li>
                 <li><a target="_blank" href="http://dictionary.reference.com/browse/<?=$word->name;?>">Define</a></li>
                 <li class="divider"></li>
-                <li><a href="/WordCloud/removeWord/<?=$word->id;?>">Remove</a></li>
+                <li><a href="/WordCloud/removeWord/<?=$word->wordid;?>">Remove</a></li>
             </ul>
 
     <?php } ?>
