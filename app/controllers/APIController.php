@@ -5,7 +5,7 @@ namespace app\controllers;
 use app\models\Cloud;
 use app\models\Words;
 
-class APIController extends \lithium\action\Controller
+class ApiController extends \lithium\action\Controller
 {
 
     public function save()

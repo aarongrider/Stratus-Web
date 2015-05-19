@@ -14,8 +14,8 @@ class Cloud extends \lithium\data\Model {
 
         // Create cloud
         $cloud = Cloud::create();
-        $cloud->width = $json["layout"]["width"];
-        $cloud->height = $json["layout"]["height"];
+        $cloud->width = $json["width"];
+        $cloud->height = $json["height"];
         $cloud->timestamp = $json["layout"]["timestamp"];
         $cloud->created = date('Y-m-d H:i:s');
         $cloud->save();
@@ -32,10 +32,10 @@ class Cloud extends \lithium\data\Model {
             $word->group = $word_data["group"];
 
             // Bounds
-            $word->bottom = $word_data["bounds"]["bottom"];
-            $word->top = $word_data["bounds"]["top"];
-            $word->left = $word_data["bounds"]["left"];
-            $word->right = $word_data["bounds"]["right"];
+            $word->bottom = $word_data["bottom"];
+            $word->top = $word_data["top"];
+            $word->left = $word_data["left"];
+            $word->right = $word_data["right"];
 
             $word->save();
         }
@@ -48,14 +48,14 @@ class Cloud extends \lithium\data\Model {
             $group->cloudid = $cloud->id;
 
             // Center
-            $group->centerx = $group_data["center"]["x"];
-            $group->centery = $group_data["center"]["y"];
+            $group->centerx = $group_data["centerx"];
+            $group->centery = $group_data["centery"];
 
             // Bounds
-            $group->bottom = $group_data["bounds"]["bottom"];
-            $group->top = $group_data["bounds"]["top"];
-            $group->left = $group_data["bounds"]["left"];
-            $group->right = $group_data["bounds"]["right"];
+            $group->bottom = $group_data["bottom"];
+            $group->top = $group_data["top"];
+            $group->left = $group_data["left"];
+            $group->right = $group_data["right"];
 
             $group->save();
         }
