@@ -20,8 +20,7 @@ class Cloud extends \lithium\data\Model {
         $cloud = Cloud::create();
         $cloud->width = $json["width"];
         $cloud->height = $json["height"];
-        $cloud->timestamp = $json["layout"]["timestamp"];
-        $cloud->created = date('Y-m-d H:i:s');
+        $cloud->timestamp = $json["timestamp"];
         $cloud->save();
 
         // Create words
