@@ -5,8 +5,8 @@ namespace app\models;
 class Cloud extends \lithium\data\Model {
 
     public $hasMany = array(
-        'Word' => array('key' => array('id' => 'cloudid')),
-        'Group' => array('key' => array('id' => 'cloudid')),
+        'Word' => array('key' => array('cloudid' => 'cloudid')),
+        'Group' => array('key' => array('cloudid' => 'cloudid')),
     );
 
 
@@ -24,7 +24,7 @@ class Cloud extends \lithium\data\Model {
         foreach($json["words"] as $word_data)
         {
             $word = Word::create();
-            $word->cloudid = $cloud->id;
+            $word->cloudid = $cloud->cloudid;
             $word->name = $word_data["name"];
             $word->count = $word_data["count"];
             $word->timestamp = $word_data["timestamp"];
@@ -45,7 +45,7 @@ class Cloud extends \lithium\data\Model {
         {
             $group = Group::create();
             $group->groupcloudid = $group_data["id"];
-            $group->cloudid = $cloud->id;
+            $group->cloudid = $cloud->cloudid;
 
             // Center
             $group->centerx = $group_data["centerx"];

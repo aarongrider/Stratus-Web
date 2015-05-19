@@ -15,7 +15,7 @@ class WordCloudController extends \lithium\action\Controller
 
     public function cloudview($cloudid = null)
     {
-        $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid)));
+        $cloud = Cloud::find('first', array('conditions' => array('cloudid' => $cloudid)));
 
         if ($cloud != null) {
             $words = Word::find('all', array('conditions' => array('cloudid' => $cloudid, 'attached' => 1)));
@@ -28,7 +28,7 @@ class WordCloudController extends \lithium\action\Controller
 
     public function listview($cloudid = null)
     {
-        $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid)));
+        $cloud = Cloud::find('first', array('conditions' => array('cloudid' => $cloudid)));
 
         if ($cloud != null) {
             $words = Word::find('all', array('conditions' => array('cloudid' => $cloudid)));
@@ -40,8 +40,8 @@ class WordCloudController extends \lithium\action\Controller
 
     public function removeWord($wordid)
     {
-        $word = Word::find('first', array('conditions' => array('id' => $wordid)));
-        Word::remove(array('id' => $wordid));
+        $word = Word::find('first', array('conditions' => array('wordid' => $wordid)));
+        Word::remove(array('wordid' => $wordid));
 
         // Redirect back to wordcloud
         $url = '/WordCloud/cloudview/' . $word->cloudid;

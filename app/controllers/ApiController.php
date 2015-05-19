@@ -25,7 +25,7 @@ class ApiController extends \lithium\action\Controller
         {
             $json = $this->request->data;
             $cloudid = $json["id"];
-            $cloud = Cloud::find('first', array('conditions' => array('id' => $cloudid), 'with' => array('Word', 'Group')));
+            $cloud = Cloud::find('first', array('conditions' => array('cloudid' => $cloudid), 'with' => array('Word', 'Group')));
 
             // If we could not fine a cloud
             if ($cloud == null) $cloud = "none";
