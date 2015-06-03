@@ -25,6 +25,11 @@
 </div>
 
 <div class="section">
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_PdIatjV2E8" frameborder="0" allowfullscreen></iframe>
+    </div>
+
     <div class="container" style="margin-bottom: 90px;">
 
         <!--   Bullets   -->
