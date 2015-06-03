@@ -4,7 +4,7 @@
     <h1 class="header center white-text">VOICE <img style="vertical-align: middle; padding-left: 20px; padding-right: 20px;" src="/img/logo_100.png"> CLOUD</h1>
     <h5 class="light white-text">Visualize Conversation. Analyze Communication. Enhance Learning.</h5>
     <br><br>
-    <a href="#" class="btn-large waves-effect waves-light disabled">Download from Google Play</a>
+    <a href="http://play.google.com/store/apps/details?id=edu.spu.teamroot.voicecloud" class="btn-large waves-effect waves-light">Download from Google Play</a>
     <br><br><br>
 </div>
 
