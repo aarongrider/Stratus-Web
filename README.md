@@ -1,2 +1,2 @@
-# Voice-Cloud-Web
-Web Interface and API for Voice Cloud
+# Stratus-Web
+Web Interface and API for Stratus
