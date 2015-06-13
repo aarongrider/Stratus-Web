@@ -40,7 +40,7 @@
                     <h2 class="center blue-text"><i class="mdi-av-mic"></i></h2>
                     <h5 class="center">Speech To Text</h5>
 
-                    <p class="light">Stratus’s Speech Recognition Service utilizes the Google SpeechRecognizer API for fast and accurate speech to text conversion.</p>
+                    <p class="light">Stratus’s Speech Recognition Service utilizes the Google Speech API for fast and accurate speech to text conversion.</p>
                 </div>
             </div>
 
