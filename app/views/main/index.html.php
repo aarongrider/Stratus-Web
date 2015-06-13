@@ -1,7 +1,7 @@
 <!--   Header   -->
 <div class="section green z-depth-1 center-align">
     <br>
-    <h1 class="header center white-text">VOICE <img style="vertical-align: middle; padding-left: 20px; padding-right: 20px;" src="/img/logo_100.png"> CLOUD</h1>
+    <h1 class="header center white-text"><img style="vertical-align: middle; padding-left: 20px; padding-right: 20px;" src="/img/logo_100.png"> STRATUS</h1>
     <h5 class="light white-text">Visualize Conversation. Analyze Communication. Enhance Learning.</h5>
     <br><br>
     <a href="http://play.google.com/store/apps/details?id=edu.spu.teamroot.voicecloud" class="btn-large waves-effect waves-light blue">Download from Google Play</a>
@@ -40,7 +40,7 @@
                     <h2 class="center blue-text"><i class="mdi-av-mic"></i></h2>
                     <h5 class="center">Speech To Text</h5>
 
-                    <p class="light">Voice Cloud’s Speech Recognition Service utilizes the Google SpeechRecognizer API for fast and accurate speech to text conversion.</p>
+                    <p class="light">Stratus’s Speech Recognition Service utilizes the Google SpeechRecognizer API for fast and accurate speech to text conversion.</p>
                 </div>
             </div>
 
